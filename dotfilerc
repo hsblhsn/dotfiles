@@ -1,10 +1,15 @@
 #!/bin/bash
-SCRIPTS="$(dirname $0)/scripts"
+export DOTFILES_DIR="$(dirname $0)"
+SCRIPTS="${DOTFILES_DIR}/scripts"
 
 command_exists () {
     type "$1" &> /dev/null ;
 }
 
+if command_exists dotfiles; then
+    echo "dotfiles already initialized"
+    return 0
+fi
 
 for script in ${SCRIPTS}/*.sh; do
     if ! source $script; then
