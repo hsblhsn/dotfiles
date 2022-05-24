@@ -1,7 +1,7 @@
 #!/bin/bash
 export DF_WORKSPACE_DIR="${HOME}/sandbox"
 if [ ! -d "${DF_WORKSPACE_DIR}" ]; then
-  echo "Creating workspace directory: ${DF_WORKSPACE_DIR}"
+	echo "Creating workspace directory: ${DF_WORKSPACE_DIR}"
 	return 0
 fi
 
