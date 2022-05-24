@@ -1,0 +1,14 @@
+#!/bin/bash
+SCRIPTS="$(dirname $0)/scripts"
+
+command_exists () {
+    type "$1" &> /dev/null ;
+}
+
+
+for script in ${SCRIPTS}/*.sh; do
+    if ! source $script; then
+        echo "Failed to source $script"
+        exit 1
+    fi
+done
