@@ -15,7 +15,9 @@ dotfiles() {
 
 	if [ "$command" = "update" ]; then
 		echo "updating dotfiles..."
+		CDIR=$(pwd)
 		cd $DOTFILES_DIR && git pull
+		cd $CDIR
 		return 0
 	fi
 
