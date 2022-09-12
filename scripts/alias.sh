@@ -1,1 +1,1 @@
-
+alias oops="echo"
