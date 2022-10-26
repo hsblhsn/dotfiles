@@ -9,7 +9,7 @@ You might not want to do what I am doing.
 Clone the repository to your home directory.
 
 ```sh
-git clone https://github.com/hsblhsn/.dotfiles.git $HOME/.dotfiles
+git clone https://github.com/hsblhsn/dotfiles.git $HOME/.dotfiles
 ```
 
 
