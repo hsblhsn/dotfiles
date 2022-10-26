@@ -3,7 +3,6 @@ export DF_WORKSPACE_DIR="${HOME}/workspace"
 if [ ! -d "${DF_WORKSPACE_DIR}" ]; then
 	echo "Creating workspace directory: ${DF_WORKSPACE_DIR}"
 	mkdir -p ${DF_WORKSPACE_DIR}
-	return 0
 fi
 
 TMP_PWD="$(pwd)"
