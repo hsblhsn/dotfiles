@@ -13,15 +13,11 @@ ZSH_THEME="refined"
 plugins+=(
 	macos
 	git
-	golang
 	docker
-	docker-compose
-	aws
 	brew
 	gcloud
 	gh
 	kubectl
-	helm
 )
 
 source $ZSH/oh-my-zsh.sh
